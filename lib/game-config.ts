@@ -18,7 +18,7 @@ function shuffleArray<T>(array: T[]): T[] {
 
 // 创建棋盘路径
 export const createBoardPath = (): PathCell[] => {
-  const boardSize = 7
+  const boardSize = 8
   const path: PathCell[] = []
 
   const visited = Array(boardSize)
@@ -89,8 +89,8 @@ export const createBoardPath = (): PathCell[] => {
     }
   }
 
-  const numStars = 12
-  const numTraps = 12
+  const numStars = 24
+  const numTraps = 24
   const totalSpecialCells = numStars + numTraps
 
   // 确保有足够的可用位置
